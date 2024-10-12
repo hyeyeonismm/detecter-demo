@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    height: 100vh;
+    position: relative;
+}
+
+/* 시작 화면 스타일 */
+#startScreen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+    color: black;
+    font-size: 36px;
+}
+
+#gameScreen {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#darkLayer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    z-index: 2;
+    pointer-events: none;
+}
+
+#timer {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: greenyellow;
+    padding-top: 10px;
+    font-size: 24px;
+    font-weight: 700;
+    z-index: 4;
+}
+
+#gameOver {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 36px;
+    text-align: center;
+    z-index:2;  
+}
+
+#gameWin {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 36px;
+    text-align: center;
+    z-index:2;
+}
+
+.StyledBtn {
+    border-radius: 20px;
+    background-color: green;
+    border: none;
+    margin-top: 20px;
+    padding: 15px 25px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.StyledBtnTxt {
+    color: white
+}
+
+.SemiText {
+    font-weight: 700;
+    padding: 10px 0px;
+}

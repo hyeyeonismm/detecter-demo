@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find the Lizard</title>
+    
+    <!-- CSS 파일 링크 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 시작 화면 -->
+    <div id="startScreen">
+         <div class="SemiText">Find the Lizard Game</div>
+        <button id="StartButton" class='StyledBtn'>
+            <div class="StyledBtnTxt">Start Game</div></button>
+    </div>
+
+    <!-- 게임 화면 -->
+    <div id="gameScreen" style="display: none;">
+        <div id="timer">Time Left: 10s</div>
+        <div id="darkLayer"></div>
+        
+        <div id="gameOver">
+             <div class="SemiText">Game Over!</div>
+            <button class='StyledBtn'onclick="location.reload()">Try Again</button></div>
+        <div id="gameWin">
+            <div class="SemiText">You Found It!</div>
+            <button class='StyledBtn' onclick="location.reload()">
+                <div class="StyledBtnTxt">
+                   Play Again
+                </div>
+            </button>
+        </div>
+    </div>
+
+    <!-- 자바스크립트 파일 링크 -->
+    <script src="script.js"></script>
+</body>
+</html>
